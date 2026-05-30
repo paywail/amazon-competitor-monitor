@@ -1,0 +1,25 @@
+{
+  "schedule": {
+    "enabled": true,
+    "cron": "0 9 * * *",
+    "tz": "Asia/Shanghai"
+  },
+  "targets": [
+    {
+      "name": "指定 ASIN",
+      "type": "asin",
+      "asins": ["B0B5GDT7LD", "B0CZKTN5QK", "B0C36ZHS6Q"],
+      "limit": 3
+    }
+  ],
+  "myProduct": {
+    "asin": "B0BPP7WPLF",
+    "name": "我方产品"
+  },
+  "output": {
+    "dir": "workspace/amazon-competitor",
+    "filenamePattern": "amazon-competitor-report-{YYYY-MM-DD}.md"
+  },
+  "site": "amazon.co.jp",
+  "category": "办公电脑桌"
+}
